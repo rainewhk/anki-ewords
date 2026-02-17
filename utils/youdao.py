@@ -127,7 +127,7 @@ def fetch_word(word: str) -> Dict[str, str]:
             "value": word,
             "usphone": f"/{ec_data['usphone']}/" if "usphone" in ec_data else "-",
             "ukphone": f"/{ec_data['ukphone']}/" if "ukphone" in ec_data else "-",
-            "translation": "\n".join(translations) or "-"
+            "translation": "<br>".join(translations) or "-"
         }
         return result
         
