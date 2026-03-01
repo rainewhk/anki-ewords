@@ -6,6 +6,8 @@ from typing import Dict, Any, Optional, Tuple
 
 import requests
 
+from rich.console import Console
+
 # Constants
 ENDPOINT = "https://dict.youdao.com/jsonapi"
 DEFAULT_PARAMS = {
@@ -16,6 +18,9 @@ DEFAULT_PARAMS = {
 CACHE_DB_PATH = Path("data/youdaio_cache.db")
 ONE_WEEK = 7 * 24 * 3600  # 1 week in seconds
 CACHE_MEM: Dict[str, Tuple[Dict[str, Any], int]] = {}
+
+# Global console for rich output
+console = Console()
 
 # Session for persistent connections
 session = requests.Session()
@@ -67,7 +72,7 @@ def save_to_cache(word: str, data: Dict[str, Any]):
             )
             conn.commit()
     except Exception as e:
-        print(f"[Cache Error] Failed to persist '{word}': {e}")
+        console.print(f"[bold red]Cache Error[/] Failed to persist '{word}': {e}")
 
 
 def fetch_word_origin(word: str, retries: int = 5) -> Optional[Dict[str, Any]]:
@@ -88,7 +93,7 @@ def fetch_word_origin(word: str, retries: int = 5) -> Optional[Dict[str, Any]]:
                 save_to_cache(word, data)
                 return data
     except Exception as e:
-        print(f"[Fetch Error] Request failed for '{word}': {e}")
+        console.print(f"[bold red]Fetch Error[/] Request failed for '{word}': {e}")
 
     # 3. Retry
     if retries > 0:
