@@ -54,11 +54,14 @@ def process_file(file_base_path: Path):
     console.print(f"Saving to [green]{output_path}[/]...")
     with open(output_path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
-        writer.writeheader()
+        # writer.writeheader()
         writer.writerows(results)
     
     console.print("[bold green]✔ Done![/]")
 
+
+def process_file_raw(file_raw_path: str):
+    process_file(Path(file_raw_path).absolute())
 
 def main():
     data_dir = Path("data")
