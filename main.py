@@ -1,3 +1,26 @@
+import sys
+import io
+
+# ========== Windows UTF-8 编码修复 ==========
+# 在导入其他模块之前，强制设置 stdout/stderr 为 UTF-8 编码
+# 这是处理 Windows 终端乱码问题的关键
+
+# 1. 强制设置 Python 输出编码为 UTF-8
+sys.stdout = io.TextIOWrapper(
+    sys.stdout.buffer, encoding='utf-8', errors='replace', line_buffering=True
+)
+sys.stderr = io.TextIOWrapper(
+    sys.stderr.buffer, encoding='utf-8', errors='replace', line_buffering=True
+)
+
+# 2. Windows 专用：强制切换终端代码页为 UTF-8 (65001)
+if sys.platform == 'win32':
+    import ctypes
+    # 设置输出代码页为 UTF-8
+    ctypes.windll.kernel32.SetConsoleOutputCP(65001)
+    # 设置输入代码页为 UTF-8
+    ctypes.windll.kernel32.SetConsoleCP(65001)
+
 import csv
 import os
 from pathlib import Path
