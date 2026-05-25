@@ -1,0 +1,75 @@
+109 neutral 中立的；中立者 adj./n.（如“neutral country”中立国）
+110 numerous 众多的；许多的 adj.（正式表达，替换“many”，如“numerous people”许多人）
+111 obey 服从；遵守 v.（搭配“obey the rules”遵守规则）
+112 obstacle 障碍；阻碍 n.（如“overcome obstacles”克服障碍）
+113 offend 冒犯；得罪 v.（搭配“offend sb”冒犯某人）
+114 operate 操作；运转；手术 v.（如“operate a machine”操作机器，“operate on sb”给某人做手术）
+115 orchestra 管弦乐队 n.（音乐领域，如“symphony orchestra”交响乐团）
+116 organise (organize) 组织；安排 v.（英式/美式拼写，如“organise an event”组织活动）
+117 oven 烤箱；烤炉 n.（厨房场景，如“electric oven”电烤箱）
+118 packet 小包；包装 n.（如“packet of chips”一包薯片）
+119 pagoda 塔；宝塔 n.（建筑领域，常指东方风格塔）
+120 pants 裤子 n.（美式英语，英式指“内裤”，日常需注意语境）
+121 patriotism 爱国主义；爱国精神 n.（思想领域核心词汇）
+122 penguin 企鹅 n.（动物领域，南极代表性生物）
+123 perform 表演；执行 v.（如“perform a play”表演戏剧，“perform a task”执行任务）
+124 perspective 视角；观点 n.（如“different perspective”不同视角）
+125 pile 堆；堆积 n./v.（如“pile of books”一堆书）
+126 ping-pong 乒乓球 n.（口语常用，正式为“table tennis”）
+127 pizza 比萨饼 n.（饮食领域，外来词）
+128 porridge 粥；麦片粥 n.（早餐场景常用，如“oat porridge”燕麦粥）
+129 portrait 肖像；描绘 n.（艺术领域，如“portrait painting”肖像画）
+130 poverty 贫穷；贫困 n.（社会领域，如“poverty reduction”扶贫）
+131 prince/princess 王子/公主 n.（皇室/童话场景，对应“king/queen”）
+132 principal 主要的；校长；本金 adj./n.（如“principal reason”主要原因，“school principal”校长）
+133 proportion 比例；部分 n.（数学/统计场景，如“proportion of”……的比例）
+134 prosperity 繁荣；兴旺 n.（经济/社会场景，如“economic prosperity”经济繁荣）
+135 puzzle 谜；使困惑 n./v.（如“puzzle game”解谜游戏）
+136 pyramid 金字塔；锥体 n.（建筑/几何场景，如“Egyptian pyramid”埃及金字塔）
+137 recent 最近的；近来的 adj.（如“in recent years”近年来，现在完成时标志性时间状语）
+138 reinforce 加强；巩固 v.（如“reinforce confidence”增强信心）
+139 rejuvenate 使恢复活力；更新 v.（如“rejuvenate the economy”振兴经济）
+140 relieve 缓解；减轻 v.（如“relieve pain”缓解疼痛；名词形式 relief）
+141 religion 宗教；信仰 n.（如“world religion”世界宗教）
+142 revolution 革命；变革 n.（如“industrial revolution”工业革命）
+143 rhythm 节奏；韵律 n.（音乐/语言场景，如“rhythm of music”音乐节奏）
+144 rival 竞争对手；与……竞争 n./v.（如“business rival”商业竞争对手）
+145 rough 粗糙的；粗略的 adj.（如“rough surface”粗糙表面，“rough estimate”粗略估计）
+146 sacrifice 牺牲；奉献 n./v.（如“make a sacrifice”做出牺牲）
+147 sauce 酱汁；调味汁 n.（饮食场景，如“tomato sauce”番茄酱）
+148 scale 规模；刻度；鳞片 n./v.（如“large scale”大规模，“scale a mountain”登山）
+149 scan 扫描；浏览 v./n.（科技/阅读场景，如“scan a QR code”扫描二维码）
+150 selfish 自私的；利己的 adj.（如“selfish person”自私的人）
+151 semester 学期 n.（教育场景，美式英语，对应英式“term”）
+152 servant 仆人；服务员 n.（历史/服务场景，注意语境）
+153 shell 壳；贝壳；外壳 n.（如“snail shell”蜗牛壳，“computer shell”电脑外壳）
+154 sigh 叹息；叹气 v./n.（如“sigh deeply”深深叹气）
+155 slave 奴隶；苦工 n./v.（历史/社会场景，“slave labor”苦役）
+156 socialism 社会主义 n.（政治领域核心词汇，首字母大写）
+157 sore 疼痛的；疮 adj./n.（如“sore throat”喉咙痛）
+158 souvenir 纪念品 n.（旅游场景常用，如“travel souvenir”旅游纪念品）
+159 spacecraft 航天器；宇宙飞船 n.（航天领域词汇，单复数同形）
+160 spicy 辛辣的；辛辣味的 adj.（饮食场景，如“spicy food”辛辣食物）
+161 split 分裂；分开 v./adj./n.（如“split up”分手，“split second”瞬间，注意：split” 的动词变化属于 AAA型不规则动词。）
+162 supplement 补充；补充物 v./n.（如“supplement vitamin”补充维生素）
+163 tap 水龙头；轻拍 n./v.（如“water tap”水龙头，“tap on the shoulder”轻拍肩膀）
+164 teamwork 团队合作 n.（职场/校园场景，如“promote teamwork”促进团队合作）
+165 teenage 青少年的 adj.（如“teenage life”青少年生活）
+166 term 学期；术语 n.（教育/专业场景，如“academic term”学期，“key term”关键术语）
+167 theirs 他们的；她们的；它们的 pron.（名词性物主代词，如“This book is theirs”这本书是他们的）
+168 throat 喉咙；咽喉 n.（人体部位，如“clear one's throat”清嗓子）
+169 tofu (bean curd) 豆腐 n.（饮食领域，外来词，两种表达均常用）
+170 tomb 坟墓；陵墓 n.（历史/考古场景，如“royal tomb”皇家陵墓）
+171 transfer 转移；转让；换乘 v./n.（如“transfer money”转账，“transfer station”中转站）
+172 transition 过渡；转变 n.（如“transition period”过渡期）
+173 tropical 热带的 adj.（地理/气候场景，如“tropical rainforest”热带雨林）
+174 true 真实的；正确的 adj.（基础词汇，文档中标注新增，需重点掌握）
+175 tunnel 隧道；地道 n./v.（如“road tunnel”公路隧道）
+176 union 联盟；工会 n.（如“labor union”工会，“European Union”欧盟）
+177 valid 有效的；正当的 adj.（如“valid passport”有效护照，“valid reason”正当理由）
+178 voluntary 自愿的；志愿的 adj.（如“voluntary work”志愿工作）
+179 voyage 航行；旅行 n./v.（长途旅行，如“sea voyage”海上航行）
+180 web 网络；网 n.（如“web page”网页，“World Wide Web”万维网）
+181 wetland 湿地；沼泽地 n.（生态领域，如“wetland protection”湿地保护）
+182 wolf 狼 n.（动物领域，复数为“wolves”）
+183 yield 产生；产量 v./n.（如“yield crops”产粮，“high yield”高产，-常见搭配：屈服/让步：yield to（屈服于……；让位于……）、yield to pressure（迫于压力让步）
