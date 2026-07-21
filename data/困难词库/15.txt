@@ -12,3 +12,7 @@ formulate
 analyze
 decipher
 validate
+rein
+reinforce
+residual
+quantile
