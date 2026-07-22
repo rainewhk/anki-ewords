@@ -16,3 +16,8 @@ rein
 reinforce
 residual
 quantile
+replicate
+resurge
+renaissance
+invasive
+backed
