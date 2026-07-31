@@ -40,3 +40,6 @@ fend
 trespass
 overhear
 re-sign
+concoct
+premature
+precocial
