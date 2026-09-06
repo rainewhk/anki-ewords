@@ -34,8 +34,32 @@ from rich.panel import Panel
 
 from utils.youdao import fetch_word, console
 
+def get_existing_words_in_folder(folder_path: Path, exclude_file: Path | None = None) -> set:
+    """Collect all words (first column) from all .csv files in the specified folder (lowercase), excluding exclude_file."""
+    existing_words = set()
+    if not folder_path.exists() or not folder_path.is_dir():
+        return existing_words
+
+    exclude_abs = exclude_file.resolve() if exclude_file else None
+
+    for csv_file in folder_path.glob("*.csv"):
+        if exclude_abs and csv_file.resolve() == exclude_abs:
+            continue
+        try:
+            with open(csv_file, "r", encoding="utf-8-sig", errors="ignore") as f:
+                reader = csv.reader(f)
+                for row in reader:
+                    if row:
+                        w = row[0].strip().strip('"').strip("'").lower()
+                        if w:
+                            existing_words.add(w)
+        except Exception as e:
+            console.print(f"[yellow]Warning:[/] Failed to read existing csv {csv_file}: {e}")
+    return existing_words
+
+
 def process_file(file_base_path: Path):
-    """Read words from .txt and save results to .csv."""
+    """Read words from .txt and save results to .csv, skipping duplicates in existing CSVs and input TXT."""
     input_path = file_base_path.with_suffix(".txt")
     output_path = file_base_path.with_suffix(".csv")
     
@@ -45,10 +69,33 @@ def process_file(file_base_path: Path):
 
     print(f"Reading from {input_path}...")
     with open(input_path, "r", encoding="utf-8") as f:
-        words = [line.strip() for line in f if line.strip()]
+        raw_words = [line.strip() for line in f if line.strip()]
+
+    if not raw_words:
+        console.print("[yellow]Warning:[/] Input file is empty.")
+        return
+
+    parent_folder = input_path.parent
+    existing_words = get_existing_words_in_folder(parent_folder, exclude_file=output_path)
+
+    # Filter out duplicate words (from existing folder CSVs & within raw_words itself)
+    seen_in_txt = set()
+    words = []
+    skipped_count = 0
+
+    for w in raw_words:
+        w_lower = w.lower()
+        if w_lower in existing_words or w_lower in seen_in_txt:
+            skipped_count += 1
+            continue
+        seen_in_txt.add(w_lower)
+        words.append(w)
+
+    if skipped_count > 0:
+        console.print(f"[yellow]Skipped {skipped_count} duplicate word(s) already in directory CSVs or duplicated in input TXT.[/]")
 
     if not words:
-        console.print("[yellow]Warning:[/] Input file is empty.")
+        console.print("[yellow]No new unique words to process.[/]")
         return
 
     results: List[Dict[str, str]] = []
