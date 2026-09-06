@@ -51,7 +51,7 @@ def get_existing_words_in_folder(folder_path: Path, exclude_file: Path | None = 
                 for row in reader:
                     if row:
                         w = row[0].strip().strip('"').strip("'").lower()
-                        if w and w not in ['word', 'words', '单词', '音标', 'phonetic', 'meaning', 'translation']:
+                        if w:
                             existing_words.add(w)
         except Exception as e:
             console.print(f"[yellow]Warning:[/] Failed to read existing csv {csv_file}: {e}")
